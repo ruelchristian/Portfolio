@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+li {
+  transition: transform 0.3s ease-in;
+}
+li:hover {
+  transform: translateY(-0.5rem);
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+a:hover {
+  color: #74d1dd;
+}
+#logo {
+  width: 7rem;
+  height: 7rem;
+  color: white;
+}
+.my-nav {
+  width: 100%;
+  position: fixed;
+  background-color: #202020;
+  display: flex;
+  height: 12vh;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50rem;
+}
+#Home,
+#Skills,
+#Projects,
+#Contacts,
+#About {
+  height: 100vh;
+}
+#Home {
+  background-color: #1a1a1a;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Home #hero-intro {
+  border-radius: 1rem;
+  padding: 2rem;
+  color: rgb(53, 53, 53);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Home #hero-intro h2 {
+  color: white;
+  font-size: 3rem;
+  margin: -2rem;
+  font-weight: normal;
+}
+#Home #hero-intro h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+#Home #hero-intro #socials {
+  display: flex;
+  gap: 2rem;
+}
+#About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#About #about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: #ffffff 2px solid;
+  padding: 2rem;
+}
+#About #about-content img {
+  width: 200px;
+  height: 200px;
+}
+#About #about-content #about-img {
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+#About h1 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+#About p {
+  text-align: justify;
+  color: white;
+  font-size: 1.7rem;
+  margin: 2rem;
+}
+#About p span {
+  color: #74d1dd;
+}
+#Skills {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#Skills h1 {
+  font-size: 3rem;
+}
+#Skills #skill-card i {
+  font-size: 4rem;
+}
+
+#Skills #skill-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.8rem;
+  width: 17rem;
+  height: 8rem;
+  background-color: #414141;
+  border-radius: 0.5rem;
+  box-shadow: #414040 0px 0px 10px;
+}
+#Skills #skill-card h3,
+p {
+  margin: 0;
+}
+#Skills #skill-card p {
+  color: #c1c3c4;
+  font-size: 0.9rem;
+}
+#Skills #skills-container {
+  display: flex;
+  width: 70%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+#Projects h1 {
+  font-size: 3rem;
+}
+#Projects #projects-container {
+  display: flex;
+  gap: 2rem;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  border: #cccccc 2px solid;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: #ffffff 0px 0px 4px;
+}
+#Projects #projects-container #project-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Projects #projects-container #project-card #project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+#Projects #projects-container #project-card #project-link {
+  color: black;
+  background-color: #b197fc;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+#Projects #projects-container #project-card #project-features {
+  margin-bottom: 1.5rem;
+}
+#Projects #projects-container #project-card #project-link:hover {
+  background-color: #9371fa;
+}
+#Projects #projects-container #project-card p {
+  color: #c1c3c4;
+}
+#Projects #projects-container img {
+  width: 50%;
+}
+#Contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+#Contacts h1 {
+  font-size: 3rem;
+}
+#Contacts #contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 60%;
+  border: #ffffff 2px solid;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+#Contacts #contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+#Contacts #contact-form input,
+button {
+  width: 20vw;
+  height: 5vh;
+  padding: 1rem;
+}
